@@ -1,0 +1,38 @@
+{
+  "data": {
+    "recommendList": [{
+      "_id": "5e2eb7e22326ceca1f6ed9c8",
+      "title": "热卖专区",
+      "englishTitle": "HOT SALE",
+    }, {
+      "_id": "5e2eb8973f04edcaa422a412",
+      "title": "发现好物",
+      "englishTitle": "GOOD THINGS",
+    }],
+    "categoryList": [{
+      "_id": "5e2e90c03a82bea8fb4df017"
+      "title": "单品花束"
+      "__v": 2
+      "categoryEnglishTitle": "简花"
+      "categoryTitle": "从简单中发现美好"
+    }, {
+      "_id": "5e2e90c03a82bea8fb4df017"
+      "title": "单品花束"
+      "__v": 2
+      "categoryEnglishTitle": "简花"
+      "categoryTitle": "从简单中发现美好"
+    }, {
+      "_id": "5e2e90c03a82bea8fb4df017"
+      "title": "单品花束"
+      "__v": 2
+      "categoryEnglishTitle": "简花"
+      "categoryTitle": "从简单中发现美好"
+    }, {
+      "_id": "5e2e90c03a82bea8fb4df017"
+      "title": "单品花束"
+      "__v": 2
+      "categoryEnglishTitle": "简花"
+      "categoryTitle": "从简单中发现美好"
+    }]
+  }
+}
