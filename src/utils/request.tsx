@@ -1,5 +1,5 @@
 import axios from 'axios';
-const httpUrl = 'http://192.168.0.122:3000';
+const httpUrl = 'https://www.domingotech.xyz';
 const requestHttp = (
   url: string,
   requestMethod: any,

@@ -42,6 +42,7 @@
     "react-native-reanimated": "^1.7.0",
     "react-native-safe-area-context": "^0.6.2",
     "react-native-screens": "^2.0.0-alpha.25",
+    "react-native-splash-screen": "^3.2.0",
     "react-native-svg": "^11.0.1",
     "react-native-swipe-list-view": "^2.0.6",
     "react-native-tab-view": "^2.12.0",

@@ -42,6 +42,7 @@ import CustomizePicker from '../../components/picker/customizePicker';
 import axios from 'axios';
 
 function AddAddress(props) {
+  const navigation = useNavigation();
   const [province, setProvince] = React.useState([]);
   const [city, setCity] = React.useState([]);
   const [county, setCounty] = React.useState([]);
@@ -183,13 +184,19 @@ function AddAddress(props) {
       coverScreen={true}
       style={{margin: 0, justifyContent: 'flex-end'}}>
       <Container>
-        {/* <HeaderComponent title={'SN-FLOWER'} leftIcon={}/> */}
-        <Content style={{paddingTop: 30, paddingHorizontal: 10}}>
-          <TouchableOpacity
+        <HeaderComponent
+          button={true}
+          title={'SN-FLOWER'}
+          leftIcon={'arrow-back'}
+          leftFn={() => props.close()}
+          navigation={navigation}
+        />
+        <Content>
+          {/* <TouchableOpacity
             style={{position: 'absolute', right: 10, top: -30, zIndex: 100}}
             onPress={() => props.close()}>
             <IconFont name={'guanbi1'} size={30} />
-          </TouchableOpacity>
+          </TouchableOpacity> */}
           <Item fixedLabel>
             <Label>收货人姓名</Label>
             <Input onChangeText={e => setName(e)} />
