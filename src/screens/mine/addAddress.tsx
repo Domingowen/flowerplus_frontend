@@ -36,7 +36,6 @@ import {useNavigation} from '@react-navigation/native';
 import {useDispatch, useSelector} from 'react-redux';
 import {AddAddressStyle as style} from './addAddressStyle';
 import requestHttp from '../../utils/request';
-import RNPicker from 'react-native-picker';
 import HeaderComponent from '../../components/header/header';
 import CustomizePicker from '../../components/picker/customizePicker';
 import axios from 'axios';
@@ -63,11 +62,14 @@ function AddAddress(props) {
     setAddress([]);
   }, [props.isVisible]);
   React.useEffect(() => {
-    // console.log(province);
+    console.log(province, 'province');
     if (province.length > 0) {
-      // console.log(!addressCode);
       addressCode.length <= 0
-        ? selectCity(province[0].statistical_code)
+        ? selectCity(
+            province[0].statistical_code
+              ? province[0].statistical_code
+              : '110000000000',
+          )
         : selectCity(addressCode[0]);
       // addressCode.map()
       let newL = [];
@@ -83,7 +85,11 @@ function AddAddress(props) {
   React.useEffect(() => {
     if (city.length > 0) {
       addressCode.length <= 0
-        ? selectCounty(city[0].statistical_code)
+        ? selectCounty(
+            city[0].statistical_code
+              ? city[0].statistical_code
+              : '110100000000',
+          )
         : selectCounty(addressCode[1]);
       let newL = [];
       city.forEach((val, index) => {
@@ -186,7 +192,7 @@ function AddAddress(props) {
       <Container>
         <HeaderComponent
           button={true}
-          title={'SN-FLOWER'}
+          title={'KOK鲜花'}
           leftIcon={'arrow-back'}
           leftFn={() => props.close()}
           navigation={navigation}

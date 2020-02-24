@@ -61,7 +61,7 @@ function Mine() {
   };
   return (
     <Container>
-      <HeaderComponent title="SN-FLOWER" />
+      <HeaderComponent title="KOK鲜花" />
 
       <Content>
         <View>

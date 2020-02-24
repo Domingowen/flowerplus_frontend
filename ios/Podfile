@@ -33,7 +33,7 @@ target 'AwesomeProject' do
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
-  pod 'Picker', :path => '../node_modules/react-native-picker'
+  # pod 'Picker', :path => '../node_modules/react-native-picker'
 
   target 'AwesomeProjectTests' do
     inherit! :search_paths

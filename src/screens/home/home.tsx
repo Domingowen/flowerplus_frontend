@@ -91,7 +91,7 @@ class Home extends React.Component {
       .catch(err => {
         console.log(err);
       });
-      this.props.settingLoading();
+    this.props.settingLoading();
   }
   componentDidMount() {
     this.initData();
@@ -132,7 +132,7 @@ class Home extends React.Component {
   render() {
     return (
       <Container>
-        <HeaderComponent title="SN-FLOWER" />
+        <HeaderComponent title="KOK鲜花" />
         {this.state.routes.length > 0 && (
           <TabView
             navigationState={{
@@ -242,7 +242,7 @@ class Home extends React.Component {
 //   };
 //   return (
 //     <Container>
-//       <HeaderComponent title="SN-FLOWER" />
+//       <HeaderComponent title="KOK鲜花" />
 //       <TabView
 //         navigationState={{index, routes}}
 //         renderScene={React.useCallback(SceneMap(sceneMap), [])}

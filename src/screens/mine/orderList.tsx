@@ -110,7 +110,7 @@ function OrderList(props) {
   return (
     <Container style={{backgroundColor: '#f1f1f1'}}>
       <HeaderComponent
-        title="SN-FLOWER"
+        title="KOK鲜花"
         button={true}
         leftIcon={'arrow-back'}
         leftFn={() => {

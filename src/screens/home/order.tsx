@@ -74,7 +74,7 @@ function Order(props) {
   return (
     <Container>
       <HeaderComponent
-        title="SN-FLOWER"
+        title="KOK鲜花"
         button={true}
         leftIcon={'arrow-back'}
         leftFn={() => {
@@ -171,7 +171,7 @@ function Order(props) {
               送礼
             </Text>
           </View>
-         </View>
+        </View>
         <View style={style.orderListItems}>
           <Text style={style.orderListLeft}>支付方式</Text>
           <View style={style.orderListRight}>

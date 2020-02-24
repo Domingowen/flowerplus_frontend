@@ -58,7 +58,7 @@ function Login(props) {
   return (
     <Container>
       <HeaderComponent
-        title="SN-FLOWER"
+        title="KOK鲜花"
         button={true}
         leftIcon={'arrow-back'}
         leftFn={() => {
@@ -76,7 +76,11 @@ function Login(props) {
         </Item>
         <Item>
           <Label>密码</Label>
-          <Input autoCapitalize={'none'} onChangeText={e => setPassword(e)} secureTextEntry={true}/>
+          <Input
+            autoCapitalize={'none'}
+            onChangeText={e => setPassword(e)}
+            secureTextEntry={true}
+          />
         </Item>
         <Button block style={style.loginBtn} onPress={handleLogin}>
           <Text>登录</Text>

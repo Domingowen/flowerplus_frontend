@@ -28,7 +28,7 @@ import {
 function Find() {
   return (
     <Container style={{backgroundColor: '#f1f1f1'}}>
-      <HeaderComponent title="YABO-FLOWER" />
+      <HeaderComponent title="KOK鲜花" />
       <Content>
         <TouchableOpacity
           style={style.gallery}

@@ -96,7 +96,7 @@ function Address() {
   return (
     <Container>
       <HeaderComponent
-        title="SN-FLOWER"
+        title="KOK鲜花"
         button={true}
         leftIcon={'arrow-back'}
         leftFn={() => {

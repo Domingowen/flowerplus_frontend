@@ -26,6 +26,7 @@ import {
 } from 'native-base';
 import Modal from 'react-native-modal';
 import Icon from '../../iconfont/Icon';
+import {getBottomSpace} from 'react-native-iphone-x-helper';
 import {useNavigation} from '@react-navigation/native';
 import {useDispatch, useSelector} from 'react-redux';
 import {DetailPopUpStyle as style} from './detailPopUpStyle';
@@ -185,7 +186,7 @@ function DetailPopUp(props) {
             width: '100%',
             backgroundColor: '#FF6672',
             position: 'absolute',
-            bottom: 40,
+            bottom: getBottomSpace(),
           }}
           onPress={submitOrder}>
           <Text style={{color: '#fff'}}>确定</Text>

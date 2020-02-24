@@ -10,6 +10,6 @@ module.exports = {
         },
       },
     ],
-    // 'transform-remove-console',
+    'transform-remove-console',
   ],
 };

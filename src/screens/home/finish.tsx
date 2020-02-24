@@ -42,7 +42,7 @@ function Finish() {
   const userId = useSelector(state => state.User.userId);
   return (
     <Container>
-      <HeaderComponent title="SN-FLOWER" />
+      <HeaderComponent title="KOK鲜花" />
       <View style={style.container}>
         <Image
           source={require('../../assets/paymentSuccess.png')}

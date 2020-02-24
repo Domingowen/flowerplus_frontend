@@ -102,12 +102,13 @@ const OrderStyle = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
     borderTopWidth: 0,
+    height: 60,
   },
   orderFooterLeft: {
     width: '60%',
     flexDirection: 'row',
     alignItems: 'center',
-    height: '70%',
+    height: '100%',
     // justifyContent: 'center',
     borderTopWidth: 1,
     borderTopColor: '#f1f1f1',
@@ -125,7 +126,7 @@ const OrderStyle = StyleSheet.create({
   buttonPayment: {
     width: '40%',
     backgroundColor: '#FC557D',
-    height: '70%',
+    height: '100%',
     alignItems: 'center',
     justifyContent: 'center',
   },

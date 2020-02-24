@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {DetailStyle as style} from './detailStyle';
+import {getBottomSpace} from 'react-native-iphone-x-helper';
 import {
   Container,
   Header,
@@ -53,7 +54,7 @@ function Detail(props) {
   return (
     <Container>
       <HeaderComponent
-        title="SN-FLOWER"
+        title="KOK鲜花"
         button={true}
         leftIcon={'arrow-back'}
         leftFn={() => {
@@ -103,7 +104,7 @@ function Detail(props) {
       <Footer style={{width: '100%', backgroundColor: '#fff'}}>
         <Button
           full
-          style={{width: '100%', backgroundColor: '#FF6672'}}
+          style={{width: '100%', backgroundColor: '#FF6672', height: '100%'}}
           onPress={() => {
             setModal(true);
           }}>

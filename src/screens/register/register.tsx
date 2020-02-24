@@ -56,7 +56,7 @@ function Register(props) {
   return (
     <Container>
       <HeaderComponent
-        title="SN-FLOWER"
+        title="KOK鲜花"
         button={true}
         leftIcon={'arrow-back'}
         leftFn={() => {
@@ -74,7 +74,11 @@ function Register(props) {
         </Item>
         <Item>
           <Label>密码</Label>
-          <Input autoCapitalize={'none'} onChangeText={e => setPassword(e)} secureTextEntry={true} />
+          <Input
+            autoCapitalize={'none'}
+            onChangeText={e => setPassword(e)}
+            secureTextEntry={true}
+          />
         </Item>
         <Button block style={style.loginBtn} onPress={handleRegister}>
           <Text>注册</Text>
